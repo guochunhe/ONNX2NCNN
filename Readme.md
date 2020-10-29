@@ -37,7 +37,7 @@
 		#include "det3.mem.h"
 
 	加载不加密的模型
-		std::string pnet_param = std::string(root_path) + "/det1.param";#det1.param.bin 这是加密的模型，不用加密可替换成det1.param
+		std::string pnet_param = std::string(root_path) + "/det1.param";           //det1.param.bin 这是加密的模型，不用加密可替换成det1.param
 		std::string pnet_bin = std::string(root_path) + "/det1.bin";
 		if (pnet_->load_param(pnet_param.c_str()) == -1 ||
 			pnet_->load_model(pnet_bin.c_str()) == -1) {
@@ -66,7 +66,7 @@
 		}
 
 	加载加密的模型
-		std::string pnet_param_bin = std::string(root_path) + "/det1.param.bin";#det1.param.bin 这是加密的模型
+		std::string pnet_param_bin = std::string(root_path) + "/det1.param.bin";               //det1.param.bin 这是加密的模型
 		std::string pnet_bin = std::string(root_path) + "/det1.bin";
 		if (pnet_->load_param(pnet_param_bin.c_str()) == -1 ||
 			pnet_->load_model(pnet_bin.c_str()) == -1) {
