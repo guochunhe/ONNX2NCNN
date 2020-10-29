@@ -1,4 +1,5 @@
 # ONNX -> NCNN
+	linux端编译好的ncnn根目录 /home/guoch/ncnn/
 	mtcnn的onnx模型放在此路径下 /home/guoch/ncnn/build/tools/onnx/onnx/ 
 	cd /home/guoch/ncnn/build/tools/onnx/onnx/ 
 	(yolov3) guoch@omnisky:~/ncnn/build/tools/onnx/onnx$ python -m onnxsim pnet.onnx pnet-sim.onnx
